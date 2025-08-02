@@ -19,7 +19,7 @@ services:
             - "9644:9644" # Redpanda admin HTTP
 
     redpanda-console:
-        image: docker.redpanda.com/vectorized/console:latest
+        image: redpandadata/console:latest
         container_name: redpanda-console
         environment:
             - KAFKA_BROKERS=redpanda:9092
